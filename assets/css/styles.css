@@ -131,6 +131,26 @@ header {
     margin: 20px 0;
 }
 
+.acciones-tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+#searchInput {
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid blueviolet;
+    text-align: center;
+    background: #000000;
+    color: #e2e2e2;
+}
+
 .table-content
 {
     width: 100%;
@@ -156,6 +176,20 @@ td {
     text-align: left;
 }
 
+.delete-btn{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(214, 39, 39);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.td-btn-delete {
+    text-align: center;
+}
+
 @media ( max-width: 800px ) {
 
     header{
@@ -169,6 +203,10 @@ td {
 
     .chart-container {
         height: 300px;
+    }
+
+    #searchInput{
+        width: 70%;
     }
 }
 

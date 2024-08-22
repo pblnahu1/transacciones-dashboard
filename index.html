@@ -35,9 +35,12 @@
         <div class="chart-container">
             <canvas id="financialChart"></canvas>
         </div>
-        <h2>Transacciones Recientes</h2>
+        <div class="acciones-tabla">
+            <h2>Transacciones Recientes</h2>
+            <input type="text" id="searchInput" placeholder="Buscar por Categoría, Monto, Fecha...">
+        </div>
         <div class="table-content">
-            <table>
+            <table aria-label="Tabla de transacciones financieras">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -53,6 +56,6 @@
         </div>
     </div>
     <script src="assets/js/app.js"></script>
-    
+    <script src="assets/js/search.js"></script>
 </body>
 </html>
