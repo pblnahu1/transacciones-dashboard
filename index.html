@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <meta name="author" content="Pablo Torrez">
+    <title>Dashboard Gráfico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <a href="https://www.linkedin.com/pablo-nahuel-torrez-33a80324b" rel="noopener noreferrer" target="_blank" class="nav-links">
+                    <li>LinkedIn</li>
+                </a>
+                <a href="https://www.chartjs.org/docs/latest/getting-started/" rel="noopener noreferrer" target="_blank" class="nav-links">
+                    <li>Docs Chart JS</li>
+                </a>
+                <a href="https://github.com/pblnahu1/" rel="noopener noreferrer" target="_blank" class="nav-links">
+                    <li>Link GitHub</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-body-style">
+        <div class="blur-circle"></div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Dashboard de Finanzas</h1>
+        <div class="chart-container">
+            <canvas id="financialChart"></canvas>
+        </div>
+        <h2>Transacciones Recientes</h2>
+        <div class="table-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Categoría</th>
+                        <th>Monto</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTable">
+                    <!-- Las transacciones se insertarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    
+</body>
+</html>
